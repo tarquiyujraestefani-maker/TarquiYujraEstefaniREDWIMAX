@@ -1,0 +1,44 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f5f7fb;line-height:1.7}
+.hero{min-height:620px;background:linear-gradient(135deg,#071b3a 0%,#0b3d72 55%,#087f9e 100%);color:white;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:600px;height:600px;border:1px solid rgba(255,255,255,.14);border-radius:50%;right:-180px;bottom:-280px;box-shadow:0 0 0 80px rgba(255,255,255,.03),0 0 0 160px rgba(255,255,255,.025)}
+.nav{max-width:1120px;margin:auto;padding:25px 25px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.logo{font-size:26px;font-weight:800;letter-spacing:1px}.logo span{color:#55d9e7}
+.nav-links{display:flex;gap:25px}.nav-links a{color:white;text-decoration:none;font-size:14px;opacity:.9}.nav-links a:hover{opacity:1}
+.hero-content{max-width:1120px;margin:120px auto 0;padding:0 25px;position:relative;z-index:2}
+.tag{letter-spacing:3px;font-size:12px;color:#7fe7ee;font-weight:bold;margin-bottom:18px}
+h1{font-size:76px;line-height:1.05;margin-bottom:18px}
+.subtitle{font-size:23px;max-width:650px;color:#d9edf4}
+.student-card{margin-top:35px;display:inline-flex;flex-direction:column;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);padding:15px 22px;border-radius:12px}
+.student-card span{font-size:13px;color:#b9d9e5}
+.section{max-width:1120px;margin:auto;padding:85px 25px}
+.section-title{display:flex;align-items:center;gap:18px;margin-bottom:42px}
+.section-title span{font-size:14px;color:#058ca4;font-weight:bold;border-bottom:2px solid #58ced9;padding-bottom:4px}
+.section-title h2{font-size:34px}
+.intro-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:55px;font-size:17px}
+.intro-grid p{margin-bottom:18px}
+.fact-box{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fact{background:white;padding:25px;border-radius:15px;box-shadow:0 8px 25px rgba(18,45,75,.08);font-size:25px;font-weight:bold}
+.fact small{display:block;font-size:12px;color:#718096;font-weight:normal;margin-top:5px}
+.dark-section,.bolivia-section{background:#0a1e38;color:white;padding:80px max(25px,calc((100% - 1070px)/2))}
+.light{color:white}.light span{color:#61e2e7}.light h2{color:white}
+.timeline{border-left:2px solid #35c9d2;margin-left:30px;padding-left:35px}
+.timeline-item{position:relative;margin-bottom:30px}.timeline-item:before{content:"";position:absolute;left:-45px;top:8px;width:16px;height:16px;border-radius:50%;background:#4ed9e0}.timeline-item b{color:#64e0e4}.timeline-item p{color:#c8d6e5;margin-top:5px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;border-radius:16px;padding:28px;box-shadow:0 8px 25px rgba(18,45,75,.08);transition:.2s}.card:hover{transform:translateY(-4px)}
+.icon{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#dff8fa;color:#087d91;font-weight:800;margin-bottom:20px}.card h3{margin-bottom:8px}.card p{font-size:14px;color:#64748b}
+.coverage{background:#eef8fa}
+.coverage-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.coverage-text p{font-size:17px}
+.places{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.places span{background:white;border-radius:30px;padding:9px 14px;font-size:13px}
+.signal{text-align:center;min-height:280px;position:relative;padding-top:45px}.tower{font-size:65px;position:relative;z-index:2}.rings{position:absolute;left:50%;top:70px;transform:translateX(-50%);width:260px;height:170px;overflow:hidden}.rings i{position:absolute;left:50%;bottom:-100px;transform:translateX(-50%);border:2px solid #43bdc9;border-radius:50%;width:120px;height:120px}.rings i:nth-child(2){width:190px;height:190px;bottom:-135px}.rings i:nth-child(3){width:260px;height:260px;bottom:-170px}.signal p{position:relative;margin-top:25px}
+.flow{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}.flow-box{width:180px;min-height:135px;background:white;border-radius:15px;box-shadow:0 8px 25px rgba(18,45,75,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:32px}.flow-box b{font-size:16px;margin-top:5px}.flow-box small{font-size:12px;color:#718096}.arrow{font-size:30px;color:#0b91a3}
+.bolivia-content{display:grid;grid-template-columns:1.5fr .5fr;gap:50px;align-items:center}.bolivia-content p{margin-bottom:18px;color:#d1dfeb}.bolivia-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:30px;text-align:center;border-radius:18px}.bolivia-card span{font-size:45px}.bolivia-card h3{font-size:28px}.bolivia-card p{margin:0;color:#75e3e7;font-weight:bold}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.company-grid div{background:white;padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(18,45,75,.06)}.company-grid b,.company-grid span{display:block}.company-grid span{font-size:13px;color:#718096}
+.table-wrap{overflow-x:auto;background:white;border-radius:15px;box-shadow:0 8px 25px rgba(18,45,75,.08)}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:17px;border-bottom:1px solid #e5eaf0}th{background:#0a2a4c;color:white}tr:last-child td{border-bottom:0}
+.pros-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.pros-card{background:white;padding:30px;border-radius:16px;box-shadow:0 8px 25px rgba(18,45,75,.08)}.pros-card h3{margin-bottom:15px;color:#087d91}.pros-card li{margin-left:20px;margin-bottom:8px}
+.conclusion{background:linear-gradient(135deg,#06385a,#078b9d);color:white;padding:90px 25px}.conclusion-inner{max-width:850px;margin:auto}.conclusion-inner>span{font-size:14px;color:#73e7eb}.conclusion h2{font-size:38px;margin:10px 0 20px}.conclusion p{font-size:17px;color:#e2f4f6}
+.sources .source-list{display:grid;gap:12px}.source-list a{background:white;padding:17px 20px;border-radius:10px;text-decoration:none;color:#086d82;box-shadow:0 5px 18px rgba(18,45,75,.05)}
+footer{background:#071b30;color:#d5e4ed;text-align:center;padding:40px 20px}footer p{margin-top:8px;font-size:14px}.small{font-size:12px;color:#8da8b8}
+@media(max-width:800px){.nav{align-items:flex-start}.nav-links{display:none}h1{font-size:54px}.hero-content{margin-top:110px}.intro-grid,.coverage-grid,.bolivia-content,.pros-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.company-grid{grid-template-columns:1fr 1fr}.section{padding:60px 20px}.dark-section,.bolivia-section{padding:60px 20px}.section-title h2{font-size:28px}}
+@media(max-width:520px){h1{font-size:44px}.subtitle{font-size:18px}.cards,.company-grid{grid-template-columns:1fr}.flow{flex-direction:column}.arrow{transform:rotate(90deg)}.fact-box{grid-template-columns:1fr 1fr}.hero{min-height:570px}}
